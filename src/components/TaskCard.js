@@ -3,10 +3,7 @@ import React from "react";
 export const TaskCard = (props) => {
   return (
     <div>
-      <li
-        key={props.task.id}
-        className={props.task.completed ? "completed" : "incomplte"}
-      >
+      <li className={props.task.completed ? "completed" : "incomplte"}>
         <span>
           {props.task.id} - {props.task.name}
         </span>
