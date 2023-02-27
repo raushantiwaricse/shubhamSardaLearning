@@ -5,7 +5,7 @@ export const TaskCard = (props) => {
     <div>
       <li className={props.task.completed ? "completed" : "incomplte"}>
         <span>
-          {props.task.id} - {props.task.name}
+          {props.task.id} - {props.task.name} - {props.title}
         </span>
         <button
           onClick={() => props.handleDelete(props.task.id)}
